@@ -3,6 +3,16 @@ import './App.css';
 import {useEffect, useState} from 'react';
 import students from './Students.json';
 import Datafetch from './components/Datafetch';
+import { Alert, BackTop,Button,ConfigProvider, DatePicker } from "antd";
+import enUS from 'antd/es/calendar/locale/en_US';
+import zhCN from 'antd/locale/zh_CN';
+import frFR from 'antd/locale/fr_FR';
+import hiIN from 'antd/lib/locale/hi_IN';
+import { ToastContainer, toast } from 'react-toastify';
+import Age from './components/Age';
+import Rtoast from './components/Rtoast';
+import Rdrawer from './components/Rdrawer';
+
 function App() {
 
   // const [data,setData] = useState([...students]);
@@ -10,11 +20,32 @@ function App() {
 
   //   localStorage.setItem('tasks',JSON.stringify(data))
   // },[data])
+  // const notify = () => toast("Wow so easy!");
   return (
     <div>
       {/* <TaskInput setData={setData}  /> */}
       {/* <ViewTasks data={data}  /> */}
-      <Datafetch />
+      {/* <ConfigProvider locale={hiIN}> */}
+
+      {/* <Datafetch /> */}
+      {/* <DatePicker /> */}
+      {/* <BackTop style={{color:"white",background:"blue"}}>
+        up
+      </BackTop> */}
+      {/* <Button type='primary'>primary button</Button>
+      <div style={{marginTop:'20px'}}>
+        <Alert message="Success Alert" type='success' showIcon />
+        <Alert message="Info Alert" type='info' showIcon />
+        <Alert message="Warning Alert" type='warning' showIcon />
+        <Alert message="Error Alert" type='error' showIcon />
+      </div>
+      <button onClick={notify}>Notify!</button>
+      <ToastContainer />
+      </ConfigProvider> */}
+      {/* <Age /> */}
+      {/* <Rtoast /> */}
+      <Rdrawer />
+
     </div>
   );
 }
