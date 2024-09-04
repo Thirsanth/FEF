@@ -12,6 +12,11 @@ import { ToastContainer, toast } from 'react-toastify';
 import Age from './components/Age';
 import Rtoast from './components/Rtoast';
 import Rdrawer from './components/Rdrawer';
+import Message from './components/Message';
+import Modaldemo from './components/Modaldemo';
+import Notificationinfo from './components/Notificationinfo';
+import Confirmactiondemo from './components/Confirmactiondemo';
+import Progresscomp from './components/Progresscomp';
 
 function App() {
 
@@ -45,6 +50,11 @@ function App() {
       {/* <Age /> */}
       {/* <Rtoast /> */}
       <Rdrawer />
+      <Message />
+      <Modaldemo />
+      <Notificationinfo />
+      <Confirmactiondemo />
+      <Progresscomp />
 
     </div>
   );
